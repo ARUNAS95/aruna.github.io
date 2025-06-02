@@ -1,0 +1,25 @@
+<header class="hero-header">
+  <nav class="nav-bar">
+    <div class="logo">Aruna.</div>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a [href]="contact.resume" download>Resume</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2>Hello</h2>
+    <h1 class="name-hover-effect">I'm Aruna Senthamaraikannan</h1>
+    <p class="tagline">Code. Build. Repeat.</p>
+
+    <div class="social-links">
+      <a [href]="contact.github" target="_blank">GitHub</a>
+      <a [href]="contact.linkedin" target="_blank">LinkedIn</a>
+      <a [href]="'mailto:' + contact.email">Email</a>
+      <a [href]="contact.leetcode" target="_blank">Leetcode</a>
+      <a [href]="contact.medium" target="_blank">Medium</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.experience-section {
+  padding: 10px 50px 50px 50px;
+  background-color: #0d0d0d;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px #6a0dad;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 30px;
+  padding: 20px 20px 20px 40px;
+  border-left: 2px solid #a855f7;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  transform: translateX(6px) scale(1.01);
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px dashed #a259ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 40px;
+  width: 16px;
+  height: 16px;
+  background-color: #a259ff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(162, 89, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 6px rgba(162, 89, 255, 0.3);
+}
+
+.timeline-role {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* color: #f0e6ff; */
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  color: #a855f7;
+}
+
+.timeline-company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #c9aaff;
+  margin-bottom: 4px;
+}
+
+.timeline-duration {
+  font-style: italic;
+  color: #a588ff;
+  font-size: 1rem;
+}
+
+.timeline-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-family: "Segoe UI", sans-serif;
+  color: #b8b8b8;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.timeline-item:hover {
+  border-color: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  background-color: #181818;
+}
+
+.skills-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #a588ff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.skill-chip {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #a855f7;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+}

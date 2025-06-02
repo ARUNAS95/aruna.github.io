@@ -1,0 +1,25 @@
+<section id="work" class="experience-section">
+  <h2 class="section-title">Work.</h2>
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let exp of experiences">
+      <div class="timeline-content">
+        <h3 class="timeline-role">{{ exp.role }}</h3>
+        <h4 class="timeline-company">
+          {{ exp.company }} |
+          <span class="timeline-duration">{{ exp.duration }}</span>
+        </h4>
+        <p class="timeline-description">{{ exp.description }}</p>
+
+        <!-- Skills Section -->
+        <div *ngIf="exp.skills?.length" class="experience-skills">
+          <h5 class="skills-heading">Skills:</h5>
+          <div class="skills-list">
+            <span class="skill-chip" *ngFor="let skill of exp.skills">{{
+              skill
+            }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

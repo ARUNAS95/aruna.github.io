@@ -1,0 +1,6 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #2a0845, #000000);
+  color: #ffffff;
+}

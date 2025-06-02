@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "name": "ARUNA SENTHAMARAIKANNAN",
+    "subtitle": "MS in Software Engineering Systems at Northeastern University",
+    "quote": "In the code of life, ambition is the syntax, inspiration is the logic, and innovation is the output."
+  },
+  "about": {
+    "name": "Aruna Senthamaraikannan",
+    "dob": "09/29/2001",
+    "image": "assets/projects/profile.png",
+    "email": "senthamaraikannan.a@northeastern.edu",
+    "description": "I’m a passionate software engineer who enjoys building things that are helpful, smart, and easy to use. I’m currently pursuing my Master’s in Software Engineering Systems at Northeastern University. I like working on web apps, solving real-world problems with technology, and turning ideas into real solutions. In my free time, I enjoy listening to music especially BTS songs and learning new things through storytelling and design. This portfolio is a small part of my journey so far."
+  },
+  "skills": [
+    "Java",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "Angular",
+    "React.js",
+    "Spring Boot",
+    "Docker",
+    "Kubernetes",
+    "Jenkins",
+    "AWS",
+    "MongoDB",
+    "MySQL",
+    "Figma",
+    "Canva",
+    "WordPress",
+    "Git",
+    "Bitbucket",
+    "Jira",
+    "Postman",
+    "Datadog"
+  ],
+  "projects": [
+    {
+      "title": "MBTA+ Transit App",
+      "description": "A smart transit app for MBTA users featuring real-time tracking, AI route suggestions, and a virtual MBTA card for digital payments. Designed to reduce delays and make commuting easier for locals and tourists.",
+      "image": "assets/projects/mbta.png",
+      "skills": ["Figma", "UX Design"],
+      "repo": "https://www.figma.com/proto/5B29rbH0bkFQ0Ro0QExBRB/MBTA-?node-id=112-135&t=neTC0JjrKeCQCQDO-1"
+    },
+    {
+      "title": "Movie Bookmark Platform",
+      "description": "Built a web app where users can search and save their favorite movies. It has filters for genre, title, and year, with a responsive design for a smooth experience.",
+      "image": "assets/projects/bookmark.png",
+      "skills": ["React.js", "Spring Boot", "SQL"],
+      "repo": "https://github.com/ARUNAS95/bookmark"
+    },
+    {
+      "title": "Recipe Management Application",
+      "description": "A desktop app built with JavaFX for organizing and planning recipes. Features include recipe storage using SQLite, Spoonacular API integration, and personalized dashboards for users.",
+      "image": "assets/projects/recipe.png",
+      "skills": ["Java", "JavaFX", "MySQL"],
+      "repo": "https://github.com/ARUNAS95/recipe"
+    },
+    {
+      "title": "Placement Prediction",
+      "description": "A Python-based machine learning project for predicting campus placements using classification models and EDA.",
+      "image": "assets/projects/placement.png",
+      "skills": ["Python", "Pandas", "Scikit-learn"],
+      "repo": "https://github.com/ARUNAS95/placement_prediction"
+    },
+    {
+      "title": "Interactive Data Visualization",
+      "description": "Interactive data visualization platform using JavaScript to explore datasets in an intuitive and dynamic way.",
+      "image": "assets/projects/map.png",
+      "skills": ["D3.js", "JavaScript", "Data Visualization"],
+      "repo": "https://github.com/ARUNAS95/interactive-data-ma"
+    },
+    {
+      "title": "Tourist Management Using Ant-Colony Optimization Algorithm",
+      "description": "Android app for Tamil Nadu tourism built with Kotlin and Node.js. Features a personalized recommendation system using Ant Colony Optimization to enhance travel planning.",
+      "image": "assets/projects/tourist.png",
+      "skills": ["Kotlin", "Node.js", "Android Studio"],
+      "repo": "https://github.com/ARUNAS95/touristApp"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Northeastern University",
+      "role": "Graduate Research Assistant – AI in Emergency Medicine",
+      "duration": "May 2025 – Present*",
+      "description": "Worked on checking and improving AI-generated medical suggestions by comparing them with real patient cases. Helped organize data and analyzed how accurate the system was.",
+      "skills": ["Python", "MongoDB", "REST API", "Excel"]
+    },
+    {
+      "company": "Northeastern University",
+      "role": "Graduate Research Assistant – Academic Lineage Tree",
+      "duration": "Feb 2025 – May 2025",
+      "description": "Collected data on PhD advisors across departments. Designed UI wireframes and built tools to help users explore academic history and research areas easily.",
+      "skills": ["Figma", "UI Design", "Data Collection"]
+    },
+    {
+      "company": "Trimble Inc.",
+      "role": "Software Engineer",
+      "duration": "Jul 2023 – Dec 2024",
+      "description": "Developed web apps using Angular and Spring Boot. Improved performance, updated old systems, and added real-time features for transportation systems.",
+      "skills": [
+        "Angular",
+        "Spring Boot",
+        "Kafka",
+        "SQL",
+        "React.js",
+        "Bitbucket",
+        "JWT Authentication",
+        "Postman",
+        "REST API"
+      ]
+    },
+    {
+      "company": "Trimble Inc.",
+      "role": "Software Developer Intern",
+      "duration": "Jan 2023 – Jun 2023",
+      "description": "Supported frontend development with Angular. Helped fix bugs, improve accessibility, and tested features as part of the team.",
+      "skills": ["Angular", "HTML", "Scrum", "Agile", "Coding Best Practices"]
+    }
+  ],
+  "contact": {
+    "address": "39 West Walnut Park, Apt 3, Boston, MA 02119",
+    "email": "senthamaraikannan.a@northeastern.edu",
+    "phone": "(857) 339-9420",
+    "linkedin": "https://www.linkedin.com/in/aruna-senthamaraikannan",
+    "github": "https://github.com/ARUNAS95",
+    "medium": "https://medium.com/@arunasasikala2001",
+    "leetcode": "https://leetcode.com/u/arunasasikala2001/",
+    "resume": "assets/projects/resume.pdf"
+  }
+}
