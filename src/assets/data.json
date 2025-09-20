@@ -82,45 +82,89 @@
   "experience": [
     {
       "company": "Northeastern University",
-      "role": "Graduate Research Assistant – AI in Emergency Medicine",
-      "duration": "May 2025 – Present*",
-      "description": "Worked on checking and improving AI-generated medical suggestions by comparing them with real patient cases. Helped organize data and analyzed how accurate the system was.",
-      "skills": ["Python", "MongoDB", "REST API", "Excel"]
+      "role": "Assistant Civic Researcher",
+      "duration": "July 2025 – Present*",
+      "description": "Built an automated evaluation platform (Airtable API + JS, custom scoring) that standardized cross-program workflows, cut manual review time by 70%, and resolved 10+ critical UI/UX defects via structured testing.",
+      "skills": [
+        "Airtable",
+        "REST API",
+        "Excel",
+        "UI/UX Debugging",
+        "User Testing"
+      ]
     },
     {
       "company": "Northeastern University",
-      "role": "Graduate Research Assistant – Academic Lineage Tree",
-      "duration": "Feb 2025 – May 2025",
-      "description": "Collected data on PhD advisors across departments. Designed UI wireframes and built tools to help users explore academic history and research areas easily.",
-      "skills": ["Figma", "UI Design", "Data Collection"]
+      "role": "Graduate Research Assistant – AI/ML Engineer",
+      "duration": "May 2025 – Present*",
+      "description": "Led a 3-developer research team to build and deploy Python FastAPI REST services on AWS (OpenAPI/Swagger) processing 500+ medical records/day and integrating LLM-based diagnostic models (85% accuracy on edge-case triage). Designed automated evaluation pipelines in Python + MongoDB with CI/CD to benchmark models against doctor-confirmed outcomes, monitor performance, and run ICD-11 classification on 24-hour refresh cycles. Partnered with clinicians to define research goals and validation protocols, translating clinical requirements into iterative software specs with version control.",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "REST APIs",
+        "AWS",
+        "OpenAPI/Swagger",
+        "MongoDB",
+        "CI/CD",
+        "LLM Integration",
+        "Model Evaluation & Monitoring",
+        "ICD-11 Classification",
+        "Data Pipelines",
+        "Version Control (Git)",
+        "Stakeholder Collaboration"
+      ]
     },
     {
-      "company": "Trimble Inc.",
-      "role": "Software Engineer",
-      "duration": "Jul 2023 – Dec 2024",
-      "description": "Developed web apps using Angular and Spring Boot. Improved performance, updated old systems, and added real-time features for transportation systems.",
+      "company": "Northeastern University",
+      "role": "Graduate Research Assistant – Frontend Developer",
+      "duration": "Feb 2025 – May 2025",
+      "description": "Built a responsive React + TypeScript web app with a reusable UI component library and interactive data visualizations. Ran user research and A/B tests to optimize UX. Designed a chatbot interface in Figma and implemented scalable, atomic-design components with state management and REST API integrations to streamline academic application workflows, earning 85% 'good' or 'excellent' user ratings.",
       "skills": [
-        "Angular",
-        "Spring Boot",
-        "Kafka",
-        "SQL",
-        "React.js",
-        "Bitbucket",
-        "JWT Authentication",
-        "Postman",
-        "REST API"
+        "React",
+        "TypeScript",
+        "Component Libraries",
+        "Atomic Design",
+        "State Management",
+        "Data Visualization",
+        "REST API Integration",
+        "Figma",
+        "User Research",
+        "A/B Testing",
+        "Responsive Design",
+        "Accessibility (a11y)",
+        "Version Control (Git)"
       ]
     },
     {
       "company": "Trimble Inc.",
-      "role": "Software Developer Intern",
-      "duration": "Jan 2023 – Jun 2023",
-      "description": "Supported frontend development with Angular. Helped fix bugs, improve accessibility, and tested features as part of the team.",
-      "skills": ["Angular", "HTML", "Scrum", "Agile", "Coding Best Practices"]
+      "role": "Software Engineer",
+      "duration": "Jan 2023 – Dec 2024",
+      "description": "Built high-performance transportation apps with Java, Spring Boot, Hibernate, and Angular. Integrated Server-Sent Events (SSE) for real-time updates, cutting API latency by 35% in production. Designed Spring Boot microservices using hexagonal architecture and a Backend-for-Frontend (BFF) pattern; implemented gRPC/Protocol Buffers for geospatial map rendering and navigation, and used Apache Kafka for event-driven messaging across legacy and modern services. Drove quality with JUnit and Postman tests to ~75% coverage and shipped via Jenkins CI/CD, Terraform IaC, and Docker.",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate/JPA",
+        "REST APIs",
+        "Angular",
+        "Server-Sent Events (SSE)",
+        "Microservices",
+        "Hexagonal Architecture",
+        "Backend-for-Frontend (BFF)",
+        "gRPC",
+        "Apache Kafka",
+        "JUnit",
+        "Postman",
+        "CI/CD (Jenkins)",
+        "Terraform (IaC)",
+        "Docker",
+        "Bitbucket",
+        "Agile/Scrum",
+        "Jira"
+      ]
     }
   ],
   "contact": {
-    "address": "39 West Walnut Park, Apt 3, Boston, MA 02119",
+    "address": "3215 Washington street, Apt 1, Boston, MA 02130",
     "email": "senthamaraikannan.a@northeastern.edu",
     "phone": "(857) 339-9420",
     "linkedin": "https://www.linkedin.com/in/aruna-senthamaraikannan",
