@@ -77,6 +77,32 @@
       "image": "assets/projects/tourist.png",
       "skills": ["Kotlin", "Node.js", "Android Studio"],
       "repo": "https://github.com/ARUNAS95/touristApp"
+    },
+    {
+      "title": "Adaptive Difficulty Shooter Game",
+      "description": "A 2D shooter game built using Java and JavaFX that dynamically adjusts gameplay difficulty in real time based on player performance metrics such as accuracy, score progression, and enemy bypass count.",
+      "image": "assets/projects/images.jpg",
+      "skills": [
+        "Java",
+        "JavaFX",
+        "Data Structures",
+        "Game Loop Architecture",
+        "Adaptive Systems"
+      ],
+      "repo": "https://github.com/ARUNAS95/adaptive-game-diffifulty-application"
+    },
+    {
+      "title": "PaperRank AI – Research Overload Solver",
+      "description": "An AI-powered research tool that aggregates academic papers from multiple databases, ranks them by relevance, quality, and innovation, and presents concise, scored results to dramatically reduce literature review time.",
+      "image": "assets/projects/paperrank.png",
+      "skills": [
+        "AI",
+        "Natural Language Understanding",
+        "Information Retrieval",
+        "Full-Stack Development",
+        "Ollama"
+      ],
+      "repo": "https://medium.com/@arunasasikala2001/how-i-built-paperrank-ai-to-solve-the-research-overload-crisis-f8d565cedb8d"
     }
   ],
   "experience": [
