@@ -4,20 +4,22 @@ import { DataService } from '../services/data.service';
 import { FadeInDirective } from '../directives/fade-in.directive';
 
 @Component({
-  selector: 'app-experience',
+  selector: 'app-specialty',
   standalone: true,
   imports: [CommonModule, FadeInDirective],
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  templateUrl: './specialty.component.html',
+  styleUrls: ['./specialty.component.css']
 })
-export class ExperienceComponent implements OnInit {
-  experiences: any[] = [];
+export class SpecialtyComponent implements OnInit {
+  specialties: any[] = [];
+  stats: any[] = [];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
-      this.experiences = data.experience;
+      this.specialties = data.specialties;
+      this.stats = data.stats;
     });
   }
 }

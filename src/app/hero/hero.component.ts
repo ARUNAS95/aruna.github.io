@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../services/data.service';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-hero',
@@ -11,14 +12,18 @@ import { DataService } from '../services/data.service';
 })
 export class HeroComponent implements OnInit {
   hero: any = {};
-  contact:any ={};
+  contact: any = {};
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, public themeService: ThemeService) {}
 
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
       this.hero = data.hero;
-      this.contact = data.contact
+      this.contact = data.contact;
     });
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggle();
   }
 }

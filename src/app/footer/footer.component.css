@@ -1,9 +1,10 @@
 .footer {
   padding: 20px 0 10px;
-  background: linear-gradient(to top, #0d0d0d, #0f0b1e);
-  color: #ccc;
+  background: var(--footer-bg);
+  color: var(--text-3);
   text-align: center;
   font-size: 0.95rem;
+  transition: background 0.3s ease;
 }
 
 .footer-links {
@@ -12,23 +13,23 @@
 
 .footer-links a {
   margin: 0 12px;
-  color: #ffffff;
+  color: var(--text-1);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #a855f7;
+  color: var(--accent);
 }
 
 .footer-text {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--text-3);
 }
 
 .heart {
-  color: #a855f7;
+  color: var(--accent);
   font-size: 1.1rem;
   margin: 0 3px;
 }

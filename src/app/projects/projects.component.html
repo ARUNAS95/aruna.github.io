@@ -1,34 +1,49 @@
 <section id="projects" class="projects-section">
   <h2 class="section-title">Projects.</h2>
 
+  <div class="filter-tabs">
+    <button
+      *ngFor="let cat of categories"
+      class="filter-btn"
+      [class.active]="activeCategory === cat"
+      (click)="setFilter(cat)"
+    >{{ cat }}</button>
+  </div>
+
   <div class="projects-grid">
     <a
-      *ngFor="let project of projects"
-      [href]="project.repo"
+      *ngFor="let project of filteredProjects"
+      [href]="project.repo || '#'"
       target="_blank"
       rel="noopener noreferrer"
       class="project-card-link"
+      appFadeIn
     >
       <div class="project-card">
-        <img
-          [src]="project.image"
-          [alt]="project.title + ' screenshot'"
-          class="project-image"
-        />
-
+        <div class="project-image-wrap">
+          <img
+            [src]="project.image"
+            [alt]="project.title"
+            class="project-image"
+            (error)="onImgError($event)"
+          />
+          <div class="project-image-fallback">
+            <span class="fallback-initials">{{ project.title.charAt(0) }}</span>
+          </div>
+          <div class="project-overlay">
+            <span class="overlay-label">View Project &rarr;</span>
+          </div>
+        </div>
         <div class="project-content">
-          <h3 class="project-title">{{ project.title }}</h3>
+          <div class="project-header">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <span class="project-category-badge">{{ project.category }}</span>
+          </div>
           <p class="project-description">{{ project.description }}</p>
-
-          <div
-            *ngIf="project.skills && project.skills.length"
-            class="project-skills"
-          >
-            <h4 class="skills-heading">Skills Used:</h4>
+          <div *ngIf="project.skills?.length" class="project-skills">
+            <p class="skills-heading">Tech Stack</p>
             <div class="skills-list">
-              <span class="skill-chip" *ngFor="let skill of project.skills">
-                {{ skill }}
-              </span>
+              <span class="skill-chip" *ngFor="let skill of project.skills">{{ skill }}</span>
             </div>
           </div>
         </div>

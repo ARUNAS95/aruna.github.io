@@ -1,16 +1,22 @@
-<section id="about" class="about-section" id="about">
+<section id="about" class="about-section">
   <h2 class="section-title">About.</h2>
-  <div class="about-container">
-    <div class="about-image">
-      <img [src]="about.image" [alt]="about.title" class="project-image" />
+  <div class="about-card">
+    <div class="about-photo-wrap">
+      <img [src]="about.image" [alt]="about.name" class="about-photo" />
     </div>
-    <div class="about-text">
-      <h3>{{ about.name }}</h3>
-      <p>{{ about.description }}</p>
-      <ul class="about-details">
-        <li><strong>DOB:</strong> {{ about.dob }}</li>
-        <li><strong>Email:</strong> {{ about.email }}</li>
-      </ul>
+    <div class="about-content">
+      <h3 class="about-name">{{ about.name }}</h3>
+      <p class="about-bio">{{ about.description }}</p>
+      <div class="about-meta">
+        <div class="meta-chip">
+          <span class="meta-label">DOB</span>
+          <span class="meta-value">{{ about.dob }}</span>
+        </div>
+        <div class="meta-chip">
+          <span class="meta-label">Email</span>
+          <span class="meta-value">{{ about.email }}</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -1,0 +1,137 @@
+.specialty-section {
+  padding: 80px 60px;
+  background-color: var(--bg);
+  transition: background-color 0.3s ease;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-1);
+  margin-bottom: 48px;
+  letter-spacing: -0.5px;
+}
+
+/* ── Specialty cards grid ── */
+.specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.spec-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(168, 85, 247, 0.18);
+}
+
+.spec-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid;
+  font-size: 0.85rem;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.spec-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.spec-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spec-points li {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.5;
+  padding-left: 18px;
+  position: relative;
+}
+
+.spec-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ── Stats bar ── */
+.stats-bar {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1a0d2e, #2d1b4e);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 48px;
+}
+
+.stats-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  margin: 0 0 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-value {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.stat-unit {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-family: "Segoe UI", sans-serif;
+}

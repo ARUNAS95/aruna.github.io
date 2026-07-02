@@ -5,21 +5,52 @@
       <li><a href="#work">Work</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a [href]="contact.resume" download>Resume</a></li>
     </ul>
+    <div class="nav-right">
+      <a [href]="'mailto:' + contact.email" class="nav-cta">Get In Touch &rarr;</a>
+      <div class="theme-toggle" (click)="toggleTheme()" [class.is-light]="themeService.isLight" role="button" aria-label="Toggle theme">
+        <div class="toggle-track">
+          <div class="toggle-thumb"></div>
+        </div>
+        <span class="toggle-label">{{ themeService.isLight ? 'Light' : 'Dark' }}</span>
+      </div>
+    </div>
   </nav>
 
-  <div class="hero-content">
-    <h2>Hello</h2>
-    <h1 class="name-hover-effect">I'm Aruna Senthamaraikannan</h1>
-    <p class="tagline">Code. Build. Repeat.</p>
+  <div class="hero-body">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Aruna Senthamaraikannan</h1>
+      <p class="hero-subtitle">{{ hero.subtitle }}</p>
 
-    <div class="social-links">
-      <a [href]="contact.github" target="_blank">GitHub</a>
-      <a [href]="contact.linkedin" target="_blank">LinkedIn</a>
-      <a [href]="'mailto:' + contact.email">Email</a>
-      <a [href]="contact.leetcode" target="_blank">Leetcode</a>
-      <a [href]="contact.medium" target="_blank">Medium</a>
+      <div class="expertise-row">
+        <span class="expertise-tag">AI &amp; Multi-Agent Systems</span>
+        <span class="expertise-tag">Full-Stack Engineering</span>
+        <span class="expertise-tag">Cloud &amp; DevOps</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#work" class="cta-primary">View My Work</a>
+        <a href="#projects" class="cta-secondary">Projects</a>
+      </div>
+
+      <div class="social-links">
+        <a [href]="contact.github" target="_blank">GitHub</a>
+        <a [href]="contact.linkedin" target="_blank">LinkedIn</a>
+        <a [href]="'mailto:' + contact.email">Email</a>
+        <a [href]="contact.leetcode" target="_blank">Leetcode</a>
+        <a [href]="contact.medium" target="_blank">Medium</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="profile-ring">
+        <img src="assets/projects/aruna_hero.jpeg" alt="Aruna Senthamaraikannan" class="profile-img">
+      </div>
+      <div class="visual-glow"></div>
     </div>
   </div>
 </header>

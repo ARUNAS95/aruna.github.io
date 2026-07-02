@@ -1,0 +1,34 @@
+<section class="certs-section" id="certifications">
+  <h2 class="section-title">Certifications.</h2>
+  <div class="certs-grid">
+    <div class="cert-card" *ngFor="let cert of certifications" appFadeIn>
+
+      <div class="cert-card-top">
+        <div class="cert-icon-wrap">
+          <img *ngIf="cert.badge" [src]="cert.badge" [alt]="cert.name" class="badge-img">
+          <div *ngIf="!cert.badge" class="badge-placeholder">
+            <span class="badge-letter">{{ cert.name.charAt(0) }}</span>
+          </div>
+        </div>
+        <span class="cert-status-badge" [class.certified]="cert.status === 'Certified'" [class.completed]="cert.status === 'Completed'">
+          {{ cert.status }}
+        </span>
+      </div>
+
+      <h3 class="cert-name">{{ cert.name }}</h3>
+      <p class="cert-issuer">{{ cert.issuer }}</p>
+      <p class="cert-description">{{ cert.description }}</p>
+
+      <div class="cert-skills">
+        <span class="skill-chip" *ngFor="let skill of visibleSkills(cert.skills)">{{ skill }}</span>
+        <span class="skill-chip extra" *ngIf="extraCount(cert.skills) > 0">+{{ extraCount(cert.skills) }}</span>
+      </div>
+
+      <div class="cert-footer">
+        <span class="cert-date" *ngIf="cert.date">{{ cert.date }}</span>
+        <a *ngIf="cert.link" [href]="cert.link" target="_blank" class="cert-verify">Verify &nearr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>

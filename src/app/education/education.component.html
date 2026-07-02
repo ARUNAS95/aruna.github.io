@@ -1,0 +1,32 @@
+<section id="education" class="education-section">
+  <h2 class="section-title">Education.</h2>
+  <div class="edu-grid">
+    <div class="edu-card" *ngFor="let edu of education" appFadeIn>
+
+      <div class="edu-card-top">
+        <div class="edu-logo">
+          <span class="edu-logo-letter">{{ edu.institution.charAt(0) }}</span>
+        </div>
+        <span class="edu-duration">{{ edu.duration }}</span>
+      </div>
+
+      <h3 class="edu-degree">{{ edu.degree }}</h3>
+      <p class="edu-major">{{ edu.major }}</p>
+      <p class="edu-institution">{{ edu.institution }}</p>
+      <p class="edu-location">{{ edu.location }}</p>
+
+      <div class="edu-gpa">
+        <span class="gpa-label">GPA</span>
+        <span class="gpa-value">{{ edu.gpa }}</span>
+      </div>
+
+      <div class="edu-courses" *ngIf="edu.courses?.length">
+        <p class="courses-label">Relevant Coursework</p>
+        <div class="course-chips">
+          <span class="course-chip" *ngFor="let course of edu.courses">{{ course }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

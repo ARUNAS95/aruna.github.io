@@ -1,6 +1,83 @@
+:root {
+  --bg:              #0d0d0d;
+  --bg-card:         linear-gradient(145deg, #1a1a1a, #111111);
+  --bg-chip:         #1e1e1e;
+  --bg-hover:        #181818;
+  --bg-subtle:       rgba(255, 255, 255, 0.03);
+  --border:          rgba(168, 85, 247, 0.2);
+  --text-1:          #ffffff;
+  --text-2:          #cccccc;
+  --text-3:          #aaaaaa;
+  --accent:          #a855f7;
+  --accent-2:        #a259ff;
+  --accent-3:        #a588ff;
+  --company:         #c9aaff;
+  --bg-alt:          #0d0d0d;
+  --nav-bg:          transparent;
+  --nav-text:        #e0e0e0;
+  --nav-text-hover:  #ffffff;
+  --hero-bg:         radial-gradient(circle at top, rgba(128, 90, 213, 0.4), transparent 60%), #0d0d0d;
+  --footer-bg:       linear-gradient(to top, #0d0d0d, #0f0b1e);
+  --dot-border:      #ffffff;
+  --section-shadow:  0 0 12px rgba(138, 43, 226, 0.1);
+}
+
+body.light-theme {
+  --bg:              #f5f5f7;
+  --bg-card:         linear-gradient(145deg, #ffffff, #f8f5ff);
+  --bg-chip:         #ede9fe;
+  --bg-hover:        #ede9fe;
+  --bg-subtle:       rgba(124, 58, 237, 0.05);
+  --border:          #c084fc;
+  --text-1:          #111111;
+  --text-2:          #555555;
+  --text-3:          #888888;
+  --accent:          #7c3aed;
+  --accent-2:        #8b5cf6;
+  --accent-3:        #9333ea;
+  --company:         #6d28d9;
+  --nav-bg:          rgba(248, 245, 255, 0.95);
+  --nav-text:        #333333;
+  --nav-text-hover:  #111111;
+  --bg-alt:          #f5f5f7;
+  --hero-bg:         radial-gradient(circle at top, rgba(128, 90, 213, 0.12), transparent 60%), #f5f5f7;
+  --footer-bg:       linear-gradient(to top, #ede9fe, #f5f5f7);
+  --dot-border:      #111111;
+  --section-shadow:  0 0 12px rgba(124, 58, 237, 0.08);
+}
+
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, #2a0845, #000000);
-  color: #ffffff;
+  font-family: 'Inter', "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text-1);
+  transition: background 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global section title accent underline */
+.section-title {
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+/* Scroll animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

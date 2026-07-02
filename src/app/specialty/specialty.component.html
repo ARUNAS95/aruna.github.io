@@ -1,0 +1,25 @@
+<section class="specialty-section">
+  <h2 class="section-title">What I Work On.</h2>
+
+  <div class="specialty-grid">
+    <div class="spec-card" *ngFor="let spec of specialties" appFadeIn>
+      <div class="spec-icon" [style.background]="spec.color + '1a'" [style.color]="spec.color" [style.borderColor]="spec.color + '44'">
+        {{ spec.label }}
+      </div>
+      <h3 class="spec-title" [style.color]="spec.color">{{ spec.title }}</h3>
+      <ul class="spec-points">
+        <li *ngFor="let point of spec.points">{{ point }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stats-bar" appFadeIn>
+    <h3 class="stats-heading">By the Numbers</h3>
+    <div class="stats-row">
+      <div class="stat-item" *ngFor="let stat of stats">
+        <span class="stat-value">{{ stat.value }}<span class="stat-unit">{{ stat.unit }}</span></span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+    </div>
+  </div>
+</section>

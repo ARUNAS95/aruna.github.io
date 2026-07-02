@@ -1,41 +1,39 @@
-.skills-marquee-section {
-  padding: 50px 60px;
-  background-color: #0d0d0d;
-  color: #fff;
+.skills-section {
+  padding: 60px;
+  background-color: var(--bg);
+  color: var(--text-1);
+  transition: background-color 0.3s ease;
 }
 
 .section-title {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px #a259ff;
+  font-weight: 800;
+  color: var(--text-1);
+  margin-bottom: 56px;
+  letter-spacing: -0.5px;
 }
 
-.marquee-wrapper {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.marquee-content {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-.marquee-content span {
-  display: inline-block;
-  margin-right: 60px;
-  font-size: 1.5rem;
+.skill-chip {
+  background-color: var(--bg-chip);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  font-family: 'Inter', "Segoe UI", sans-serif;
   font-weight: 500;
-  color: #b8b8b8;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.skill-chip:hover {
+  background-color: var(--accent);
+  color: #ffffff;
 }

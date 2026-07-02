@@ -1,65 +1,102 @@
 .about-section {
-  padding: 10px 60px 60px;
-  background-color: #0d0d0d;
-  color: #ffffff;
+  padding: 60px;
+  background-color: var(--bg);
+  color: var(--text-1);
+  transition: background-color 0.3s ease;
 }
 
 .section-title {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px #6a0dad;
+  font-weight: 800;
+  color: var(--text-1);
+  margin-bottom: 56px;
+  letter-spacing: -0.5px;
 }
 
-.about-container {
+.about-card {
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
+  align-items: center;
+  gap: 50px;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--section-shadow);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.about-image img {
-  width: 320px; /* increased from 250px */
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 0 18px rgba(168, 85, 247, 0.3);
-  transition: transform 0.3s ease;
+.about-photo-wrap {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  box-shadow: 0 4px 20px rgba(162, 89, 255, 0.15);
 }
 
-.about-image img:hover {
-  transform: scale(1.03); /* subtle zoom on hover */
+.about-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
-.about-text {
+.about-content {
   flex: 1;
-  min-width: 280px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.about-text h3 {
-  font-size: 1.5rem;
-  color: #a855f7;
-  margin-bottom: 10px;
+.about-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
 }
 
-.about-text p {
-  font-size: 1.5rem;
-  line-height: 1.7;
-  color: #cccccc;
-  margin-bottom: 20px;
-}
-
-.about-details {
-  list-style: none;
-  padding: 0;
+.about-bio {
   font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-2);
+  margin: 0;
 }
 
-.about-details li {
-  margin-bottom: 8px;
-  color: #bbbbbb;
+.about-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
 }
 
-.about-details strong {
-  color: #ffffff;
+.meta-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-chip);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  transition: background-color 0.3s ease;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  color: var(--text-2);
 }

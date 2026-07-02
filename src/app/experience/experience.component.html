@@ -1,24 +1,17 @@
 <section id="work" class="experience-section">
-  <h2 class="section-title">Work.</h2>
-  <div class="timeline">
-    <div class="timeline-item" *ngFor="let exp of experiences">
-      <div class="timeline-content">
-        <h3 class="timeline-role">{{ exp.role }}</h3>
-        <h4 class="timeline-company">
-          {{ exp.company }} |
-          <span class="timeline-duration">{{ exp.duration }}</span>
-        </h4>
-        <p class="timeline-description">{{ exp.description }}</p>
-
-        <!-- Skills Section -->
-        <div *ngIf="exp.skills?.length" class="experience-skills">
-          <h5 class="skills-heading">Skills:</h5>
-          <div class="skills-list">
-            <span class="skill-chip" *ngFor="let skill of exp.skills">{{
-              skill
-            }}</span>
-          </div>
+  <h2 class="section-title">Work Experience.</h2>
+  <div class="exp-list">
+    <div class="exp-card" *ngFor="let exp of experiences; let i = index" appFadeIn>
+      <div class="exp-card-header">
+        <div class="exp-title-block">
+          <h3 class="exp-role">{{ exp.role }}</h3>
+          <p class="exp-company">{{ exp.company }}</p>
         </div>
+        <span class="exp-duration-badge">{{ exp.duration }}</span>
+      </div>
+      <p class="exp-desc">{{ exp.description }}</p>
+      <div *ngIf="exp.skills?.length" class="exp-skills">
+        <span class="skill-chip" *ngFor="let skill of exp.skills">{{ skill }}</span>
       </div>
     </div>
   </div>
