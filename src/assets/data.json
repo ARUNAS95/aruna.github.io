@@ -8,7 +8,7 @@
     { "value": "4.0", "label": "GPA", "unit": "/4.0" },
     { "value": "3+", "label": "Years Industry Experience", "unit": "" },
     { "value": "85%", "label": "Diagnostic Accuracy (MEDAS)", "unit": "" },
-    { "value": "3.5K+", "label": "Devices Secured (AIOps)", "unit": "" }
+    { "value": "2", "label": "Research Publications", "unit": "" }
   ],
   "specialties": [
     {
@@ -236,6 +236,20 @@
         "Agile/Scrum",
         "Jira"
       ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "A Super-Learner with Large Language Models for Medical Emergency Advising",
+      "venue": "arXiv preprint arXiv:2511.08614",
+      "year": "2025",
+      "link": "https://arxiv.org/abs/2511.08614"
+    },
+    {
+      "title": "Mobile Application Development of Tourist Management Using Ant Colony Optimisation Algorithm for Tamil Nadu",
+      "venue": "AIP Conference Proceedings 3175 (1)",
+      "year": "2025",
+      "link": "https://scholar.google.com/citations?user=33Q2JEQAAAAJ&hl=en"
     }
   ],
   "education": [
