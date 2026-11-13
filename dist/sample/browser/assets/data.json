@@ -164,6 +164,13 @@
   ],
   "experience": [
     {
+      "company": "The Burnes Center for Social Change",
+      "role": "Web Intern",
+      "duration": "Sep 2026 – Present",
+      "description": "Completed development of the Innovamos website and proposed a reusable component architecture. InnovateUS reports serving 300,000 learners across 81+ government partners.",
+      "skills": ["Web Development", "Component Architecture"]
+    },
+    {
       "company": "Driven Tech",
       "role": "Engineering Intern (AIOps)",
       "duration": "Jan 2026 – June 2026",
@@ -184,7 +191,7 @@
     {
       "company": "Northeastern University",
       "role": "Assistant Civic Researcher",
-      "duration": "Jul 2025 – Dec 2025",
+      "duration": "Jul 2025 – Present",
       "description": "Built an automated evaluation platform (Airtable API + JS, custom scoring) that standardized cross-program workflows, cut manual review time by 70%, and resolved 10+ critical UI/UX defects via structured testing.",
       "skills": [
         "Airtable",
@@ -197,7 +204,7 @@
     {
       "company": "Northeastern University",
       "role": "Graduate Research Assistant – AI/ML Engineer",
-      "duration": "May 2025 – Apr 2026",
+      "duration": "May 2025 – May 2026",
       "description": "Led a team building MEDAS, a medical diagnostic ensemble that dynamically weights outputs from Gemini, GPT, Grok, and Claude via a meta-learner, improving Pass@1 from 65% to 85%. Built a FastAPI inference pipeline on AWS SageMaker with Redis caching and a React dashboard for real-time clinician review.",
       "skills": [
         "Python",
